@@ -17,7 +17,7 @@ public class TestBase {
     public TestBase() {
         try{
             properties = new Properties();
-            FileInputStream file = new FileInputStream("src/main/java/config/config.properties");
+            FileInputStream file = new FileInputStream("src/main/resources/config/config.properties");
             properties.load(file);
         }catch (Exception e){
             e.printStackTrace();
